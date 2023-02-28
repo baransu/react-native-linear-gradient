@@ -7,7 +7,7 @@
     "android",
     "ios",
     "windows",
-    "LinearGradientNativeComponent.js",
+    "schema",
     "index.android.js",
     "index.d.ts",
     "index.ios.js",
@@ -62,6 +62,6 @@
   "codegenConfig": {
     "name": "BVLinearGradientSpec",
     "type": "components",
-    "jsSrcsDir": "."
+    "jsSrcsDir": "schema"
   }
 }
