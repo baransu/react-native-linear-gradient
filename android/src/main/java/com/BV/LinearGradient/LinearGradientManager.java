@@ -1,6 +1,7 @@
 package com.BV.LinearGradient;
 
 import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
@@ -43,13 +44,13 @@ public class LinearGradientManager extends BVLinearGradientManagerSpec<LinearGra
 
     @Override
     @ReactProp(name = PROP_START_POS)
-    public void setStartPoint(LinearGradientView gradientView, ReadableArray startPos) {
+    public void setStartPoint(LinearGradientView gradientView, ReadableMap startPos) {
         gradientView.setStartPosition(startPos);
     }
 
     @Override
     @ReactProp(name = PROP_END_POS)
-    public void setEndPoint(LinearGradientView gradientView, ReadableArray endPos) {
+    public void setEndPoint(LinearGradientView gradientView, ReadableMap endPos) {
         gradientView.setEndPosition(endPos);
     }
 
@@ -61,7 +62,7 @@ public class LinearGradientManager extends BVLinearGradientManagerSpec<LinearGra
 
     @Override
     @ReactProp(name = PROP_ANGLE_CENTER)
-    public void setAngleCenter(LinearGradientView gradientView, ReadableArray in) {
+    public void setAngleCenter(LinearGradientView gradientView, ReadableMap in) {
         gradientView.setAngleCenter(in);
     }
 

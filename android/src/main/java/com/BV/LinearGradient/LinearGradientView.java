@@ -1,6 +1,7 @@
 package com.BV.LinearGradient;
 
 import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.uimanager.PixelUtil;
 
 import android.content.Context;
@@ -123,13 +124,13 @@ public class LinearGradientView extends View {
         return new float[]{startX, startY};
     }
 
-    public void setStartPosition(ReadableArray startPos) {
-        mStartPos = new float[]{(float) startPos.getDouble(0), (float) startPos.getDouble(1)};
+    public void setStartPosition(ReadableMap startPos) {
+        mStartPos = new float[]{(float) startPos.getDouble("x"), (float) startPos.getDouble("y")};
         drawGradient();
     }
 
-    public void setEndPosition(ReadableArray endPos) {
-        mEndPos = new float[]{(float) endPos.getDouble(0), (float) endPos.getDouble(1)};
+    public void setEndPosition(ReadableMap endPos) {
+        mEndPos = new float[]{(float) endPos.getDouble("x"), (float) endPos.getDouble("y")};
         drawGradient();
     }
 
@@ -156,8 +157,8 @@ public class LinearGradientView extends View {
         drawGradient();
     }
 
-    public void setAngleCenter(ReadableArray in) {
-        mAngleCenter = new float[]{(float) in.getDouble(0), (float) in.getDouble(1)};
+    public void setAngleCenter(ReadableMap in) {
+        mAngleCenter = new float[]{(float) in.getDouble("x"), (float) in.getDouble("y")};
         drawGradient();
     }
 
