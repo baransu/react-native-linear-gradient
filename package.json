@@ -7,7 +7,7 @@
     "android",
     "ios",
     "windows",
-    "common.js",
+    "schema",
     "index.android.js",
     "index.d.ts",
     "index.ios.js",
@@ -58,5 +58,10 @@
   },
   "scripts": {
     "flow": "flow check"
+  },
+  "codegenConfig": {
+    "name": "BVLinearGradientSpec",
+    "type": "components",
+    "jsSrcsDir": "schema"
   }
 }
